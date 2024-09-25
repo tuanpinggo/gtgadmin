@@ -14,6 +14,20 @@ export interface SeoSeo extends Schema.Component {
   };
 }
 
+export interface BrandCompany extends Schema.Component {
+  collectionName: 'components_brand_companies';
+  info: {
+    displayName: 'company';
+    description: '';
+  };
+  attributes: {
+    text1: Attribute.String;
+    text2: Attribute.String;
+    thumbnail: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    num: Attribute.String;
+  };
+}
+
 export interface FaqFaq extends Schema.Component {
   collectionName: 'components_faq_faqs';
   info: {
@@ -29,20 +43,6 @@ export interface FaqFaq extends Schema.Component {
           preset: 'rich';
         }
       >;
-  };
-}
-
-export interface BrandCompany extends Schema.Component {
-  collectionName: 'components_brand_companies';
-  info: {
-    displayName: 'company';
-    description: '';
-  };
-  attributes: {
-    text1: Attribute.String;
-    text2: Attribute.String;
-    thumbnail: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
-    num: Attribute.String;
   };
 }
 
@@ -63,8 +63,8 @@ declare module '@strapi/types' {
   export module Shared {
     export interface Components {
       'seo.seo': SeoSeo;
-      'faq.faq': FaqFaq;
       'brand.company': BrandCompany;
+      'faq.faq': FaqFaq;
       'about.section-1': AboutSection1;
     }
   }
