@@ -1,0 +1,99 @@
+{
+  "kind": "singleType",
+  "collectionName": "brands",
+  "info": {
+    "singularName": "brand",
+    "pluralName": "brands",
+    "displayName": "Thương hiệu",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "sapo": {
+      "type": "text"
+    },
+    "company": {
+      "displayName": "company",
+      "type": "component",
+      "repeatable": true,
+      "component": "brand.company"
+    },
+    "title_dr_tien": {
+      "type": "string"
+    },
+    "description_dr_tien": {
+      "type": "text"
+    },
+    "title_sec1_dr_tien": {
+      "type": "string"
+    },
+    "content_sec1_dr_tien": {
+      "type": "string"
+    },
+    "title_sec2_dr_tien": {
+      "type": "string"
+    },
+    "content_sec2_dr_tien": {
+      "type": "string"
+    },
+    "address_dr_tien": {
+      "type": "string"
+    },
+    "sapo_thepyo": {
+      "type": "text"
+    },
+    "title_thepyo": {
+      "type": "string"
+    },
+    "description_thepyo": {
+      "type": "text"
+    },
+    "address1_thepyo": {
+      "type": "string"
+    },
+    "address2_thepyo": {
+      "type": "string"
+    },
+    "title_sec1_thepyo": {
+      "type": "string"
+    },
+    "content_sec1_thepyo": {
+      "type": "string"
+    },
+    "title_sec2_thepyo": {
+      "type": "string"
+    },
+    "content_sec2_thepyo": {
+      "type": "string"
+    },
+    "title_laurent": {
+      "type": "string"
+    },
+    "description_laurent": {
+      "type": "text"
+    },
+    "address_laurent": {
+      "type": "string"
+    },
+    "title_sec1_laurent": {
+      "type": "string"
+    },
+    "content_sec1_laurent": {
+      "type": "string"
+    },
+    "title_sec2_laurent": {
+      "type": "string"
+    },
+    "content_sec2_laurent": {
+      "type": "string"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.seo"
+    }
+  }
+}

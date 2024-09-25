@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tuyen_dungs",
+  "info": {
+    "singularName": "tuyen-dung",
+    "pluralName": "tuyen-dungs",
+    "displayName": "Tuyển dụng",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "code": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "salary": {
+      "type": "string"
+    },
+    "number": {
+      "type": "string"
+    },
+    "deadline": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "content": {
+      "type": "customField",
+      "options": {
+        "output": "Markdown",
+        "preset": "rich"
+      },
+      "customField": "plugin::ckeditor.CKEditor"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.seo"
+    }
+  }
+}

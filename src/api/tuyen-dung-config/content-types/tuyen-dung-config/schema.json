@@ -1,0 +1,120 @@
+{
+  "kind": "singleType",
+  "collectionName": "tuyen_dung_configs",
+  "info": {
+    "singularName": "tuyen-dung-config",
+    "pluralName": "tuyen-dung-configs",
+    "displayName": "Tuyển dụng",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title_sec_1": {
+      "type": "string"
+    },
+    "description_sec1": {
+      "type": "customField",
+      "options": {
+        "output": "Markdown",
+        "preset": "rich"
+      },
+      "customField": "plugin::ckeditor.CKEditor"
+    },
+    "title_sec_2": {
+      "type": "string"
+    },
+    "title_sec2_1": {
+      "type": "string"
+    },
+    "content_sec2_1": {
+      "type": "text"
+    },
+    "title_sec2_2": {
+      "type": "string"
+    },
+    "content_sec2_2": {
+      "type": "text"
+    },
+    "title_sec2_3": {
+      "type": "string"
+    },
+    "content_sec2_3": {
+      "type": "text"
+    },
+    "title_sec2_4": {
+      "type": "string"
+    },
+    "content_sec2_4": {
+      "type": "text"
+    },
+    "img1": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "img2": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "img3": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "img4": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "img5": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "subtitle_list": {
+      "type": "string"
+    },
+    "title_list": {
+      "type": "string"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.seo"
+    }
+  }
+}

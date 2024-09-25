@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_about_section_1s",
+  "info": {
+    "displayName": "section_1"
+  },
+  "options": {},
+  "attributes": {
+    "text1": {
+      "type": "string"
+    },
+    "text2": {
+      "type": "string"
+    },
+    "thumbnail": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "vertical_layout": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

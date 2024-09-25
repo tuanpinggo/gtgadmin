@@ -1,0 +1,153 @@
+{
+  "kind": "singleType",
+  "collectionName": "homepages",
+  "info": {
+    "singularName": "homepage",
+    "pluralName": "homepages",
+    "displayName": "Trang chủ",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "sub_title_section_2": {
+      "type": "string"
+    },
+    "about": {
+      "displayName": "section_1",
+      "type": "component",
+      "repeatable": true,
+      "component": "about.section-1"
+    },
+    "title_section_1": {
+      "type": "string"
+    },
+    "description_section_1": {
+      "type": "text"
+    },
+    "title_section_2": {
+      "type": "string"
+    },
+    "content_section_2": {
+      "type": "customField",
+      "options": {
+        "output": "Markdown",
+        "preset": "rich"
+      },
+      "customField": "plugin::ckeditor.CKEditor"
+    },
+    "label_btn_section_2": {
+      "type": "string"
+    },
+    "link_btn_section_2": {
+      "type": "string"
+    },
+    "thumbnail_section_2": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "sub_title_service": {
+      "type": "string"
+    },
+    "title_service": {
+      "type": "string"
+    },
+    "description_service": {
+      "type": "customField",
+      "options": {
+        "output": "Markdown",
+        "preset": "rich"
+      },
+      "customField": "plugin::ckeditor.CKEditor"
+    },
+    "services": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::service.service"
+    },
+    "sub_title_tuyen_dung": {
+      "type": "string"
+    },
+    "title_tuyen_dung": {
+      "type": "string"
+    },
+    "description_tuyen_dung": {
+      "type": "text"
+    },
+    "tuyen_dung_title_1": {
+      "type": "string"
+    },
+    "tuyen_dung_content_1": {
+      "type": "text"
+    },
+    "tuyen_dung_title_2": {
+      "type": "string"
+    },
+    "tuyen_dung_title_3": {
+      "type": "string"
+    },
+    "tuyen_dung_content_3": {
+      "type": "text"
+    },
+    "label_btn_tuyen_dung": {
+      "type": "string"
+    },
+    "link_btn_tuyen_dung": {
+      "type": "string"
+    },
+    "backgroud_tuyen_dung": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "tuyen_dung_content_2": {
+      "type": "text"
+    },
+    "sub_title_testimonial": {
+      "type": "string"
+    },
+    "title_testimonial": {
+      "type": "string"
+    },
+    "description_testimonial": {
+      "type": "text"
+    },
+    "label_btn_testimonial": {
+      "type": "string"
+    },
+    "link_btn_testimonial": {
+      "type": "string"
+    },
+    "testimonials": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::testimonial.testimonial"
+    },
+    "sub_title_news": {
+      "type": "string"
+    },
+    "title_news": {
+      "type": "string"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.seo"
+    }
+  }
+}

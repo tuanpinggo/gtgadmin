@@ -1,0 +1,31 @@
+{
+  "kind": "singleType",
+  "collectionName": "config_news",
+  "info": {
+    "singularName": "cau-hinh-tin-tuc",
+    "pluralName": "config-news",
+    "displayName": "Cấu hình tin tức",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "feature_post": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::tin-tuc.tin-tuc"
+    },
+    "read_today": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tin-tuc.tin-tuc"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.seo"
+    }
+  }
+}

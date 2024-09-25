@@ -1,0 +1,164 @@
+{
+  "kind": "singleType",
+  "collectionName": "abouts",
+  "info": {
+    "singularName": "about",
+    "pluralName": "abouts",
+    "displayName": "Giới thiệu",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "sapo": {
+      "type": "text"
+    },
+    "sub_title_section_1": {
+      "type": "string"
+    },
+    "description_section_1": {
+      "type": "text"
+    },
+    "about": {
+      "displayName": "section_1",
+      "type": "component",
+      "repeatable": true,
+      "component": "about.section-1"
+    },
+    "sub_title_vision": {
+      "type": "string"
+    },
+    "title_vision": {
+      "type": "string"
+    },
+    "description_vision": {
+      "type": "text"
+    },
+    "content_vision": {
+      "type": "customField",
+      "options": {
+        "output": "Markdown",
+        "preset": "rich"
+      },
+      "customField": "plugin::ckeditor.CKEditor"
+    },
+    "label_button_vision": {
+      "type": "string"
+    },
+    "link_button_vision": {
+      "type": "string"
+    },
+    "thumbnail_vision": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "sub_title_mission": {
+      "type": "string"
+    },
+    "title_mission": {
+      "type": "string"
+    },
+    "description_mission": {
+      "type": "text"
+    },
+    "content_mission": {
+      "type": "customField",
+      "options": {
+        "output": "Markdown",
+        "preset": "rich"
+      },
+      "customField": "plugin::ckeditor.CKEditor"
+    },
+    "label_button_mission": {
+      "type": "string"
+    },
+    "link_button_mission": {
+      "type": "string"
+    },
+    "thumbnail_mission": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "sub_title_value": {
+      "type": "string"
+    },
+    "title_value": {
+      "type": "string"
+    },
+    "description_value": {
+      "type": "text"
+    },
+    "content_value": {
+      "type": "customField",
+      "options": {
+        "output": "Markdown",
+        "preset": "rich"
+      },
+      "customField": "plugin::ckeditor.CKEditor"
+    },
+    "label_button_value": {
+      "type": "string"
+    },
+    "link_button_value": {
+      "type": "string"
+    },
+    "thumbnail_value": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "title_cta": {
+      "type": "string"
+    },
+    "label_button_cta": {
+      "type": "string"
+    },
+    "link_button_cta": {
+      "type": "string"
+    },
+    "sub_title_team": {
+      "type": "string"
+    },
+    "title_team": {
+      "type": "string"
+    },
+    "description_team": {
+      "type": "text"
+    },
+    "teams": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::team.team"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.seo"
+    }
+  }
+}
